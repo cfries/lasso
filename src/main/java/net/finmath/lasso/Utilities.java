@@ -17,7 +17,7 @@ public class Utilities {
 	 * @param right The matrix B
 	 * @return product The matrix product of A*B (if suitable)
 	 */
-	public static double[][] mult(final double[][] left, final double[][] right){
+	public static double[][] mult(final double[][] left, final double[][] right) {
 		return new Array2DRowRealMatrix(left).multiply(new Array2DRowRealMatrix(right)).getData();
 	}
 
@@ -28,7 +28,7 @@ public class Utilities {
 	 * @param vector The vector v
 	 * @return product The vector product of A*v (if suitable)
 	 */
-	public static double[] mult(final double[][] matrix, final double[] vector){
+	public static double[] mult(final double[][] matrix, final double[] vector) {
 		return new Array2DRowRealMatrix(matrix).operate(vector);
 	}
 }
