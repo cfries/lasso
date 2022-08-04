@@ -3,25 +3,22 @@
  */
 package net.finmath.lasso;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.util.Date;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
 /**
- * @author fries
- *
+ * Testing the utilities class
+ * 
+ * @author Christian Fries
  */
-class UtilitiesTest {
+public class UtilitiesTest {
 
 	@Test
-	void testCSVRead() {
+	public void testCSVRead() {
 		
 		System.out.println("Reading the CSV table to List<List<String>>");
 		try {
@@ -41,7 +38,7 @@ class UtilitiesTest {
 	}
 
 	@Test
-	void testCSVParsing() {
+	public void testCSVParsing() {
 		
 		System.out.println("Parsing the CSV table to Java types");
 		
